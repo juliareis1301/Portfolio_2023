@@ -1,0 +1,22 @@
+/* Header.css */
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar-custom {
+  gap: 15px;
+}
+
+.options-custom:hover{
+  color: #F65151;
+}
+
+
+.options-name{
+  text-align: center;
+}
+

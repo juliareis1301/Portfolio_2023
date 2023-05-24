@@ -1,0 +1,28 @@
+#about{
+  width:100%;
+  height: 100vh;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  margin-top: 100px;
+  margin-right: 210px;
+  margin-left: 210px;
+
+}
+
+.title-about{
+  color:#FEF4F4;
+  font-size: 55px;
+
+}
+
+.txt-about{
+  color: #FEF4F4;
+  padding-top: 40px;
+  font-size: 25px;
+
+}

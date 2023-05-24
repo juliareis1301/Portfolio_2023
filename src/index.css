@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+*{
+
+
+  font-family: 'Ubuntu Condensed', sans-serif;}
+
+.App{
+  min-height: 100vh;
+  background-color: #2E2828;
+  position: relative;  
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display:flex;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bolhas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.bolhas span {
+  width: 20px;
+  height: 20px;
+  background-color: #F65151;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 
+  0 0 0 10px #F6515144, 
+  0 0 50px #F65151, 
+  0 0 100px #F65151;
+  animation: animar calc(150s / var(--i))15s linear infinite;
+}
+
+
+@keyframes animar {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+
+.bolhas span:nth-of-type(even) {
+  background: #f77224;
+  box-shadow: 
+  0 0 0 10px #f7722444,
+  0 0 50px #f77224,
+  0 0 100px #f77224;
+}
+

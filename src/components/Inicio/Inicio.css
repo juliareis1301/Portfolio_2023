@@ -1,0 +1,71 @@
+#inicio {
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.card-title {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10vh;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  color: #FEF4F4
+}
+
+.eu {
+  width: 350px;
+}
+
+.prazer {
+  font-size: 90px;
+}
+
+.name-text{
+  color:#F65151
+}
+
+
+.emoji{
+  display: inline-block;
+  animation: swing 1s ease-in-out infinite;
+  font-size: 10vh;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width:374px) {
+  .card-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+}

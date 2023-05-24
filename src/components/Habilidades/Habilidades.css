@@ -1,0 +1,92 @@
+#habilidades {
+  background-color: #503A3A;
+  margin: 0 auto;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.title-habilidades {
+  padding: 20px;
+  font-size: 65px;
+  font-weight: 800;
+  color: #FEF4F4;
+  padding-top: 80px;
+}
+
+
+.habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20vh;
+}
+
+.container-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13vh;
+}
+
+.icon {
+  font-size: 15vh;
+  color: #FEF4F4;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.icon:hover,
+.icon:focus {
+  color: #F65151 ;
+  transition: ease-in-out .3s;
+  transform: scale(1.05)
+
+}
+
+#legenda{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #FEF4F4;
+}
+
+.skill-box{
+  background-color: #2E2828;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+@media (max-width:768px) {
+  #habilidades{
+    padding: 10px;
+  }
+
+  .container-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .skill-box{
+    display: flex;
+    align-items: center;
+  }
+
+  .icon{
+    padding: 0;
+  }
+}
+
+@media (max-width:576px) {
+
+}
+
+@media (max-width:400px) {
+    
+  
+}
