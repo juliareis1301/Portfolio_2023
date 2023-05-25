@@ -7,12 +7,10 @@ import marvel from '../../Image/marvel.png';
 import spotify from '../../Image/spotifypage.png';
 import pokedex from '../../Image/pokedex.png';
 import portfolio from  '../../Image/portfolio.png';
-import { useNavigate } from 'react-router-dom';
 
 
 function Projects() {
 
-  const navigate = useNavigate();
 
   const handleButtonClickMarvel = () => {
     const marvelProject = 'marvelcomicsshowcase.netlify.app';
