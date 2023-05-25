@@ -19,6 +19,7 @@
   padding-top: 10vh;
 }
 
+
 .title {
   display: flex;
   align-items: flex-start;
@@ -58,14 +59,62 @@
   }
 }
 
+
+
 @media (max-width:374px) {
-  .card-title {
-    display: flex;
-    flex-direction: column;
-  }
+  
 
   .title {
     display: flex;
     align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 3vh;
+
+  }
+
+  .card-title{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .prazer{
+    font-size: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .emoji{
+    font-size: 5vh;
+  }
+
+  
+}
+
+@media (max-width:500px) {
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding-top: 15vh;
+    padding-bottom: 3vh;
+
+  }
+
+  .card-title{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prazer{
+    font-size: 45px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .emoji{
+    font-size: 5vh;
   }
 }

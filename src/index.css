@@ -36,7 +36,7 @@
   0 0 0 10px #F6515144, 
   0 0 50px #F65151, 
   0 0 100px #F65151;
-  animation: animar calc(150s / var(--i))15s linear infinite;
+  animation: animar calc(150s / var(--i))0.1s linear infinite;
 }
 
 
@@ -58,4 +58,6 @@
   0 0 50px #f77224,
   0 0 100px #f77224;
 }
+
+
 
