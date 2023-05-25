@@ -13,6 +13,7 @@ function Skills() {
     <section id="skills">
       <Header />  
       <div className="skills-container">
+        <div className="skills-box">
         <h1 className="title-skills">Skills</h1>
         <div class="container-skills">
           <div class="box-container">
@@ -65,8 +66,7 @@ function Skills() {
               </div>
             </div>
           </div>
-
-
+        </div>
         </div>
       </div>
     </section>

@@ -22,11 +22,11 @@ function Inicio() {
                 </h1>        
                 <h3 className='dev'>web developer</h3>
               </div>
-              <div className="card">
+            
                 <div className='box'>
                   <img src={eu} className="eu img-fluid" alt="Imagem" />
                 </div>
-              </div>
+              
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@
     font-size: 55px;
     color: #fef4f4;
     padding-top: 30px;
+    text-align: center;
   }
 
 
@@ -86,4 +87,16 @@
     font-size: 15vh;
     cursor: pointer;
     color: #2E2828;
+  }
+
+  @media (max-width:374px  ) {
+    
+    .container-skills{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skills-container{
+      display: flex;
+    }
   }
