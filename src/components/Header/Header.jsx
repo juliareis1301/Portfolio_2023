@@ -4,11 +4,13 @@ import './Header.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import { BiHomeAlt2 } from 'react-icons/bi';
 import { MdEmojiPeople } from  'react-icons/md';
 import { GiSkills } from 'react-icons/gi';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { IoMdContacts } from 'react-icons/io';
+
 
 function Header() {
   return (
@@ -25,31 +27,30 @@ function Header() {
               style={{ maxHeight: '100px', gap: '30px' }}
               navbarScroll
             >
-              <Nav.Link className='options-custom' href="/" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              <Link className='nav-link options-custom' to="/" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                 <BiHomeAlt2 className='icons-header'/>
                 Home
-              </Nav.Link>
-              <Nav.Link  className='options-custom' href="/about" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              </Link>
+              <Link className='nav-link options-custom' to="/about" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                 <MdEmojiPeople className='icons-header'/>
                 About 
-              </Nav.Link>
-              <Nav.Link className='options-custom' href="/skills" style={{ color: '#FEF4F4', fontSize: '16px' }}>
-               <GiSkills className='icons-header'/>
+              </Link>
+              <Link className='nav-link options-custom' to="/skills" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+                <GiSkills className='icons-header'/>
                 Skills
-              </Nav.Link>
-              <Nav.Link className='options-custom' href="/projects" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              </Link>
+              <Link className='nav-link options-custom' to="/projects" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                 <AiOutlineFundProjectionScreen className='icons-header'/>
                 Projects
-              </Nav.Link>
-              <Nav.Link className='options-custom' href="/contact" style={{ color: '#FEF4F4', fontSize: '16px' }}>
-               <IoMdContacts className='icons-header'/>
+              </Link>
+              <Link className='nav-link options-custom' to="/contact" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+                <IoMdContacts className='icons-header'/>
                 Contact
-              </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </div>
   );
 }

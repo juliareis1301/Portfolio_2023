@@ -1,24 +1,25 @@
 import './index.css'
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Inicio from './components/Inicio/Inicio';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 import About from './Pages/About/About';
 import Skills from './Pages/Skills/Skills';
 import Projects from './Pages/Projects/Projects';
 import Contact from './Pages/Contact/Contact';
 
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Inicio/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/skills' element={<Skills/>}></Route>
+        <Route path='/projects' element={<Projects/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
+      </Routes>
       </BrowserRouter>
       <div className="bolhas">
         <span style={{ '--i': 11 }}></span>
