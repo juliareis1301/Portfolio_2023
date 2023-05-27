@@ -25,23 +25,23 @@ function Header() {
               style={{ maxHeight: '100px', gap: '30px' }}
               navbarScroll
             >
-              <Nav.Link className='options-custom'  to="/" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              <Nav.Link className='options-custom' href="/" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                 <BiHomeAlt2 className='icons-header'/>
                 Home
               </Nav.Link>
-              <Nav.Link  className='options-custom' to="/about" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              <Nav.Link  className='options-custom' href="/about" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                 <MdEmojiPeople className='icons-header'/>
-                About
+                About 
               </Nav.Link>
-              <Nav.Link className='options-custom' to="/skills" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              <Nav.Link className='options-custom' href="/skills" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                <GiSkills className='icons-header'/>
                 Skills
               </Nav.Link>
-              <Nav.Link className='options-custom' to="/projects" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              <Nav.Link className='options-custom' href="/projects" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                 <AiOutlineFundProjectionScreen className='icons-header'/>
                 Projects
               </Nav.Link>
-              <Nav.Link className='options-custom' to="/contact" style={{ color: '#FEF4F4', fontSize: '16px' }}>
+              <Nav.Link className='options-custom' href="/contact" style={{ color: '#FEF4F4', fontSize: '16px' }}>
                <IoMdContacts className='icons-header'/>
                 Contact
               </Nav.Link>
@@ -49,6 +49,7 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
     </div>
   );
 }
