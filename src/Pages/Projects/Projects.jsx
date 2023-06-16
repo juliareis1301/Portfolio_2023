@@ -7,6 +7,7 @@ import marvel from '../../Image/marvel.png';
 import spotify from '../../Image/spotifypage.png';
 import pokedex from '../../Image/pokedex.png';
 import portfolio from  '../../Image/portfolio.png';
+import shoppingCart from '../../Image/MercadoLivre.png';
 
 
 function Projects() {
@@ -37,6 +38,11 @@ function Projects() {
     window.open(fullURL, '_blank')
   }
 
+  const handleButtonClickShoppingCart = () => {
+    const shoppingCartProject = 'shoppingcartml.netlify.app/';
+    const fullURL = `https://${shoppingCartProject}`;
+    window.open(fullURL, '_blank')
+  }
 
   return (
     <section id="projects">
@@ -90,6 +96,17 @@ function Projects() {
               My first project with HTML, CSS and JS <br></br><br></br><br></br>
             </Card.Text>
             <Button onClick={handleButtonClickPortfolio}  variant="primary">Check out</Button>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '18rem' ,backgroundColor:'#FEF4F4'}}>
+          <Card.Img variant="top" src={shoppingCart} />
+          <Card.Body>
+            <Card.Title className="title-card">Shopping Cart Mercado Livre</Card.Title>
+            <Card.Text>
+            In this application, the user can navigate through products sold via the Mercado Livre API and add them to the shopping cart.   
+            </Card.Text>
+            <Button onClick={handleButtonClickShoppingCart}  variant="primary">Check out</Button>
           </Card.Body>
         </Card>
         </div>
